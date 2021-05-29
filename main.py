@@ -3,7 +3,6 @@ from pygame.locals import *
 import sys
 
 def main():
-    # print("hello pygame!")
     pygame.init()
     (w, h) = (500, 637)
     (x, y) = (w/2, h/2)
