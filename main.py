@@ -22,8 +22,15 @@ def main():
         screen.fill((0, 0, 0, 0))
         screen.blit(bg, rect_bg)
         screen.blit(player, rect_player)
-        pygame.time.wait(30)
+        pygame.time.wait(10)
         pygame.display.update()
+        x += 1
+        y += 1
+        rect_player.center = (x, y)
+        if x > w:
+            x = 0
+        if y > h:
+            y = 0
 
         for event in pygame.event.get():
             if event.type == QUIT:
